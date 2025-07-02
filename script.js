@@ -1,4 +1,3 @@
-// 🔍 API Availability Check via XMLHttpRequest
 (function testAPI() {
   const data = null;
   const xhr = new XMLHttpRequest();
