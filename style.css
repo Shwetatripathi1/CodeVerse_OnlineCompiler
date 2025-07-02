@@ -1,0 +1,144 @@
+/* === BASE STYLES === */
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2b2d42);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #202040;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00000080;
+}
+
+h1 {
+  text-align: center;
+  color: #ffa500;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+label {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+select {
+  padding: 6px;
+  font-size: 1rem;
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+/* === TEXTAREA & BUTTON === */
+textarea {
+  width: 100%;
+  height: 300px;
+  background-color: #1d1f21;
+  color: #c5c8c6;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  resize: vertical;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #00b894;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #019875;
+}
+
+/* === OUTPUT === */
+h2 {
+  margin-top: 30px;
+  color: #00cec9;
+}
+
+pre {
+  background-color: #1d1f21;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f5f6fa;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  textarea {
+    height: 250px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  textarea {
+    height: 200px;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  pre {
+    font-size: 14px;
+  }
+}
